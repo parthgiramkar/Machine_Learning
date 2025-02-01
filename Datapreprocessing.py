@@ -74,7 +74,9 @@ print(y_test)
 
 #Feature Scaling After Train-Test Split Prevents Data Leakage Ensures Unbiased Testing:
 
-"""Feature Scaling ----  . It involves transforming the features (input variables) in a dataset so that they are on the same scale, making the model training more efficient and stable. common method - Standardization (also known as Z-score normalization) is widely used in many ml algorithms  especially when features have different scales or units."""
+"""Feature Scaling ----  . It involves transforming the features (input variables) in a dataset so that they are on the same scale, 
+making the model training more efficient and stable. common method - Standardization (also known as Z-score normalization) is 
+widely used in many ml algorithms  especially when features have different scales or units."""
 
 from sklearn.preprocessing import StandardScaler     #StandardScaler is used for feature scaling i.e standardization, which transforms the data to
 sc = StandardScaler()                                                    #have a mean of 0 and a standard deviation of 1.sc = StandardScaler()
@@ -86,3 +88,27 @@ x_test[:, 3:] = sc.transform(x_test[:, 3:])     #fit_transformto intger variable
 print(x_train)
 
 print(x_test)
+
+
+"""
+ 1 ] pandas : - 
+Role: Handling and analyzing data.
+Key Points:
+Works with tabular data (like Excel sheets) using DataFrames.
+Helps in reading data from files (CSV, Excel), cleaning, and manipulating it.
+Example: pd.read_csv('data.csv') reads data from a CSV file.
+
+2 ] matplotlib.pyplot (as plt):
+Role: Creating visualizations.
+Key Points:
+Used to make graphs like line plots, bar charts, histograms, etc.
+Helps in visualizing data trends and patterns.
+Example: plt.plot(x, y) creates a line plot.
+
+3] numpy (as np):
+Role: Working with numerical data.
+Key Points:
+Handles arrays (like lists but faster and more powerful).
+Supports mathematical operations (like addition, multiplication) on large datasets.
+Example: np.array([1, 2, 3]) creates a NumPy array.
+"""

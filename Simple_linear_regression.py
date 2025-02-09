@@ -1,3 +1,6 @@
+
+
+
 """IMPORTING THE LIBRARIES"""
 
 import pandas as pd
@@ -8,7 +11,7 @@ import numpy as np
 
 dataframe = pd.read_csv('Salary_Data.csv')
 x = dataframe.iloc[ : , : -1 ].values      #the rows and cols respectively as only two cols are there
-y = dataframe.iloc[ : , : -1 ].values      #so exclude the last one
+y = dataframe.iloc[ : , -1 ].values      #so include the last one
 
 """SPLITTING THE DATA INTO TRAINING _TEST AND TEST_SPLIT"""
 
@@ -20,3 +23,8 @@ x_train , x_test , y_train , y_test = train_test_split( x , y , test_size = 0.2 
 from sklearn.linear_model import LinearRegression
 lr = LinearRegression()       # fit function of LinearRegression class
 lr.fit( x_train , y_train)            #fit trains the training set i.e indep and dep variable
+
+
+
+#Use Linear Regression when data shows a straight-line trend.
+#Use Non-Linear Regression when data follows a curve and can't be well-represented by a straight line.

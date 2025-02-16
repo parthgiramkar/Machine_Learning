@@ -111,4 +111,9 @@ Key Points:
 Handles arrays (like lists but faster and more powerful).
 Supports mathematical operations (like addition, multiplication) on large datasets.
 Example: np.array([1, 2, 3]) creates a NumPy array.
+
+4 ]  seaborn as sns
+Yes, both Matplotlib and Seaborn are used for data visualization, but Seaborn provides a
+higher-level interface for statistical graphics, making it easier to create complex plots with better styling by default.
+
 """

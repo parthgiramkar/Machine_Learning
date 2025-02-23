@@ -25,7 +25,7 @@ sns.scatterplot(x=df['ALCOHOL'], y=df['MALIC ACID'] , hue = df['CLASS LABEL'] , 
 
 from sklearn.model_selection import train_test_split
 #dropped the last col for x and stored itin  y , what to drop axis = 1(i.e col) for class label
-x_test , x_train , y_test , y_train = train_test_split( df.drop('CLASS LABEL' , axis = 1) , df['CLASS LABEL'] , test_size = 0.3 , random_state = 0 )
+x_train , x_test , y_train , y_test = train_test_split( df.drop('CLASS LABEL' , axis = 1) , df['CLASS LABEL'] , test_size = 0.3 , random_state = 0 )
 y_train.shape , x_train.shape , x_test.shape
 
 # NORMALISATION STARTS

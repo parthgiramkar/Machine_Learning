@@ -1,3 +1,5 @@
+Multivariate Imputation : - This type of imputer fills missing values in one column using the values from other columns.
+
 KNNImputer calculates distances (Euclidean distance) between rows .
 Disadv - 
 At production time, cannot_be used as it performs calculations at prediction time as it is stored also in the training_set , it cannot be trained before hand , thus taking verytime to load . So , its best for training/Offline pre-processing

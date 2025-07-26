@@ -19,5 +19,20 @@ It standardizes features by removing the mean and scaling to unit variance:
 Where:x = original value
 μ = mean of the feature
 σ = standard deviation of the feature
-After StandardScaler, the transformed data has:Mean = 0 , Standard deviation = 1
- So values typically fall between -3 and +3 , feature scaling after train_test_split to prevent data leakage
+After StandardScaler, the transformed data has - Mean = 0 , Standard deviation = 1
+ So values typically fall between -3 and +3 , DO feature scaling after train_test_split to prevent data leakage
+
+fit() — Learn from the data
+Calculates the statistics needed for transformation.
+
+scaler.fit(X_train)  # Learns parameters like mean, std
+  transform() — Apply what it learned
+Actually scales the data using what it learned during fit().
+
+X_train_scaled = scaler.transform(X_train)  # Uses learned mean and std to scale
+
+Only used on training data on ,  test_data use only the transform() not fit it will apply values of training_set to testing_set by doing this 
+IF we apply FIT_TRANSFORM ON TEST THEN THE MODEL WILL be OVERFITTING
+
+
+

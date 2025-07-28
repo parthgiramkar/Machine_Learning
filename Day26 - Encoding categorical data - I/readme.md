@@ -1,4 +1,4 @@
-                                               UNDER Feature Engginering
+                                               UNDER Feature Engginering - handling the categorical data
 
 Encoding the categorical_data using ordinal encoder (when the categorical_data is in meaningful_order/ranking)
 

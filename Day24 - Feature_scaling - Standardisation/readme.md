@@ -1,4 +1,6 @@
-                                                        UNDER Feature Engginering
+
+                                                      UNDER Feature Engginering
+IN that comes the Feature Transformation : - 
 
 Under Feature Scaling - which is used to standardise data of indep features(x) into fixed_range
 

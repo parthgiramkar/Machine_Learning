@@ -1,5 +1,5 @@
 With Column_Transformer , we can apply changes to the desired columns all at a once  
-
+With and without the columnTransformer 
 Syntax - tuples inside the transfomers list with the syntax - Tuple format	('name', transformer, columns)
 
 

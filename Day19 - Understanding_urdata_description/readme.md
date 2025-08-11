@@ -1,4 +1,6 @@
-df.corr(numeric_only=True) 
+df.corr(numeric_only=True)  returns correlation matrix
+
+
 A correlation matrix is a table that shows the correlation coefficients between many variables at once. Each cell in the table shows how strongly two variables are related
 
 Strength: The closer the number is to 1 or -1, the stronger the relationship. A value of 0.8 is a strong positive relationship, while -0.2 is a weak negative one.
